@@ -9,8 +9,6 @@ export default class NoteListItem extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log('will recieve props');
-        console.log(this.props.note);
         this.setState({note: nextProps.note});
     }
 
@@ -27,7 +25,6 @@ export default class NoteListItem extends Component {
     }
 
     render() {
-        console.log('reander');
         return (
             <div>
                 <h2>Adding New:</h2>
